@@ -6,8 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E783AEA22FC4AF03001B27AF /* Dumpling in Frameworks */ = {isa = PBXBuildFile; productRef = E783AEA12FC4AF03001B27AF /* Dumpling */; };
+		E783AFE52FC6BD8A001B27AF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E783AFE42FC6BD8A001B27AF /* Alamofire */; };
+		E79294AA2FBD8CFB000D1C86 /* SwiftHelper in Frameworks */ = {isa = PBXBuildFile; productRef = E79294A92FBD8CFB000D1C86 /* SwiftHelper */; };
+		E792952B2FBF2F47000D1C86 /* Store.storekit in Resources */ = {isa = PBXBuildFile; fileRef = E792952A2FBF2F47000D1C86 /* Store.storekit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		E792948F2FBD8992000D1C86 /* 076Fathom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 076Fathom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E792952A2FBF2F47000D1C86 /* Store.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Store.storekit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,6 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E783AFE52FC6BD8A001B27AF /* Alamofire in Frameworks */,
+				E783AEA22FC4AF03001B27AF /* Dumpling in Frameworks */,
+				E79294AA2FBD8CFB000D1C86 /* SwiftHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +56,7 @@
 		E79294862FBD8992000D1C86 = {
 			isa = PBXGroup;
 			children = (
+				E792952A2FBF2F47000D1C86 /* Store.storekit */,
 				E79294912FBD8992000D1C86 /* 076Fathom */,
 				E79294902FBD8992000D1C86 /* Products */,
 			);
@@ -78,6 +90,9 @@
 			);
 			name = 076Fathom;
 			packageProductDependencies = (
+				E79294A92FBD8CFB000D1C86 /* SwiftHelper */,
+				E783AEA12FC4AF03001B27AF /* Dumpling */,
+				E783AFE42FC6BD8A001B27AF /* Alamofire */,
 			);
 			productName = 076Fathom;
 			productReference = E792948F2FBD8992000D1C86 /* 076Fathom.app */;
@@ -107,6 +122,11 @@
 			);
 			mainGroup = E79294862FBD8992000D1C86;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E79294A82FBD8CFB000D1C86 /* XCRemoteSwiftPackageReference "SwiftHelper" */,
+				E783AEA02FC4AF03001B27AF /* XCRemoteSwiftPackageReference "Dumpling" */,
+				E783AFE32FC6BD8A001B27AF /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E79294902FBD8992000D1C86 /* Products */;
 			projectDirPath = "";
@@ -122,6 +142,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E792952B2FBF2F47000D1C86 /* Store.storekit in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,25 +168,33 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 076Fathom/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NoteWork;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need microphone access for voice recording";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use your data to display personalized advertising.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "fat.-76Fathom";
+				PRODUCT_BUNDLE_IDENTIFIER = com.estna.fagila;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -178,25 +207,33 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 076Fathom/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NoteWork;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need microphone access for voice recording";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use your data to display personalized advertising.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "fat.-76Fathom";
+				PRODUCT_BUNDLE_IDENTIFIER = com.estna.fagila;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -341,6 +378,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E783AEA02FC4AF03001B27AF /* XCRemoteSwiftPackageReference "Dumpling" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/chojnac/Dumpling";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+		E783AFE32FC6BD8A001B27AF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.12.0;
+			};
+		};
+		E79294A82FBD8CFB000D1C86 /* XCRemoteSwiftPackageReference "SwiftHelper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Vladimir089/SwiftHelper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E783AEA12FC4AF03001B27AF /* Dumpling */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E783AEA02FC4AF03001B27AF /* XCRemoteSwiftPackageReference "Dumpling" */;
+			productName = Dumpling;
+		};
+		E783AFE42FC6BD8A001B27AF /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E783AFE32FC6BD8A001B27AF /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		E79294A92FBD8CFB000D1C86 /* SwiftHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E79294A82FBD8CFB000D1C86 /* XCRemoteSwiftPackageReference "SwiftHelper" */;
+			productName = SwiftHelper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E79294872FBD8992000D1C86 /* Project object */;
 }

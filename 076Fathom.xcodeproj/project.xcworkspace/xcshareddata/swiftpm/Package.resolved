@@ -1,0 +1,51 @@
+{
+  "originHash" : "49913ca39465427e21ed4266be75dd706def0335080a9bc1ddd340fa3f42fd8b",
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire",
+      "state" : {
+        "revision" : "7595cbcf59809f9977c5f6378500de2ad73b7ddb",
+        "version" : "5.12.0"
+      }
+    },
+    {
+      "identity" : "apphudsdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apphud/ApphudSDK.git",
+      "state" : {
+        "revision" : "a4d2b93384cc67fa6a853465ff345be6f84b0a72",
+        "version" : "3.6.2"
+      }
+    },
+    {
+      "identity" : "dumpling",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/chojnac/Dumpling",
+      "state" : {
+        "revision" : "38dc5256dd46b9e42828bad5822276847c6100fe",
+        "version" : "0.3.0"
+      }
+    },
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit.git",
+      "state" : {
+        "revision" : "2842e6e84e82eb9a8dac0100ca90d9444b0307f4",
+        "version" : "5.7.1"
+      }
+    },
+    {
+      "identity" : "swifthelper",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Vladimir089/SwiftHelper",
+      "state" : {
+        "revision" : "5ccc6f253ab197133999cd6018a40bfce2236422",
+        "version" : "0.1.3"
+      }
+    }
+  ],
+  "version" : 3
+}
