@@ -86,10 +86,10 @@ class OnbViewController: UIViewController {
             navigationController?.setViewControllers([mainVc], animated: true)
         }
         
-        if currentIndex == 3 {
-            SKStoreReviewController.requestReview()
-        }
-        
+//        if currentIndex == 3 {
+//            SKStoreReviewController.requestReview()
+//        }
+//        
         if currentIndex == 2 {
             if let v = arrViews[2] as? OnbThreeView  {
                 v.startProgress()

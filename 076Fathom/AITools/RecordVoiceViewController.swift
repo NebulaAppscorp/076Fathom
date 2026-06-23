@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import StoreKit
 import AVFoundation
 
 class RecordVoiceViewController: UIViewController {
@@ -52,6 +53,8 @@ class RecordVoiceViewController: UIViewController {
         setupUI()
         
         UIApplication.shared.isIdleTimerDisabled = true
+        
+        SKStoreReviewController.requestReview()
         
         requestMicrophonePermission()
     }

@@ -8,6 +8,7 @@
 import UIKit
 import SnapKit
 import SwiftHelper
+import StoreKit
 
 class PasteUrlViewController: UIViewController {
     
@@ -44,6 +45,7 @@ class PasteUrlViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        SKStoreReviewController.requestReview()
         setupUI()
     }
     
