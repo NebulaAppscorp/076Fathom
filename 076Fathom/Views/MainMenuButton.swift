@@ -31,6 +31,16 @@ class MainMenuButton: UIButton {
         self.clipsToBounds = true
         self.animateButton()
         
+        let imageView = UIImageView(image: image)
+        imageView.contentMode = .scaleToFill
+        imageView.clipsToBounds = true
+        addSubview(imageView)
+        imageView.snp.makeConstraints { make in
+            make.height.equalTo(70)
+            make.width.equalTo(89)
+            make.right.top.equalToSuperview()
+        }
+        
         let label = UILabel()
         label.text = text
         label.font = .systemFont(ofSize: 17, weight: .semibold)
@@ -43,15 +53,7 @@ class MainMenuButton: UIButton {
             make.left.bottom.right.equalToSuperview().inset(16)
         }
         
-        let imageView = UIImageView(image: image)
-        imageView.contentMode = .scaleToFill
-        imageView.clipsToBounds = true
-        addSubview(imageView)
-        imageView.snp.makeConstraints { make in
-            make.height.equalTo(70)
-            make.width.equalTo(89)
-            make.right.top.equalToSuperview()
-        }
+      
     }
     
 }
