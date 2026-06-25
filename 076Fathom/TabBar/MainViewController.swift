@@ -17,7 +17,7 @@ class MainViewController: UITabBarController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        label.text = "Note AI"
+        label.text = "Descript AI"
         label.textColor = .black
         label.font = .systemFont(ofSize: 28, weight: .bold)
         

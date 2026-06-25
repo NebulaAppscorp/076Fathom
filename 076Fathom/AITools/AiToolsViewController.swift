@@ -60,7 +60,7 @@ class AiToolsViewController: UIViewController, UIDocumentPickerDelegate, PHPicke
         super.viewWillAppear(animated)
         
         if let tabbar = self.tabBarController as? MainViewController {
-            tabbar.label.text = "Note AI"
+            tabbar.label.text = "Descript AI"
         }
         
         collection.reloadData()
